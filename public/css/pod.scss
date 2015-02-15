@@ -3,6 +3,7 @@ $textColor: #fff;
 $iconColor: #fff;
 $iconColorHover: #FA6900;
 $borderRadius: 5px;
+$progressbarColor: #ddd;
 
 // Player
 article.podcast .podlovewebplayer_wrapper {
@@ -72,7 +73,7 @@ article.podcast .podlovewebplayer_wrapper {
 	}
 	
 	.mejs-horizontal-volume-current, .mejs-time-current {
-		background: #eaeced;
+		background: $progressbarColor;
 	}
 	
 	.mejs-time-float {

@@ -24,16 +24,20 @@ block content
 			input.color#baseColor(value="#333333")
 			
 		.form-group
-			label(for="textColor") Text-Color
+			label(for="textColor") Texts
 			input.color#textColor(value="#fff")
 			
 		.form-group
-			label(for="iconColor") Icon-Color
+			label(for="iconColor") Icons
 			input.color#iconColor(value="#fff")
 			
 		.form-group
-			label(for="iconColorHover") Hovered Icon-Color
+			label(for="iconColorHover") Hovered Icons
 			input.color#iconColorHover(value="#FA6900")
+			
+		.form-group
+			label(for="progressbarColor") Progress/Volume
+			input.color#progressbarColor(value="#ddd")
 			
 		.form-group
 			label(for="borderRadius") Border-Radius
@@ -77,7 +81,8 @@ block content
 					textColor: $('#textColor').val(),
 					iconColor: $('#iconColor').val(),
 					iconColorHover: $('#iconColorHover').val(),
-					borderRadius: $('#borderRadius').val()
+					borderRadius: $('#borderRadius').val(),
+					progressbarColor: $('#progressbarColor').val()
 				};
 				
 				$.post("/c", data, function(r) {
