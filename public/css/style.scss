@@ -12,6 +12,27 @@ a {
   height: 80px;
 }
 
+.demo {
+  position: relative;
+  
+  article {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .demoBg {
+    background-color: #eee;
+    position: absolute;
+    
+    top: 30px;
+    bottom: -12px;
+    left: -58px;
+    right: -58px;
+    
+    z-index: 1;
+  }
+}
+
 .form-group {
   display: inline-block;
   margin-bottom: 1.5em;

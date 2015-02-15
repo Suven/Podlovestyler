@@ -8,6 +8,7 @@ block content
 	
 		h2 Preview
 		
+		.demoBg
 		include playerV1.jade
 							
 	h2 Configs
@@ -16,7 +17,7 @@ block content
 
 		.form-group
 			label(for="bodyBg") Your Sites BG
-			input.color#bodyBg(value="#fff")
+			input.color#bodyBg(value="#eee")
 
 		.form-group
 			label(for="baseColor") Base-Color
@@ -86,7 +87,7 @@ block content
 						$("#generated").val(r.css);
 						$("#generatedWithWrapper").val('<style rel="stylesheet">' + r.css + '</style>');
 						$("#podstyle").html(r.css);
-						$("body").css("background", $('#bodyBg').val());
+						$(".demoBg").css("background", $('#bodyBg').val());
 					}			
 				});
 				
