@@ -5,6 +5,11 @@ $iconColorHover: #FA6900;
 $borderRadius: 5px;
 $progressbarColor: #ddd;
 
+// Downloads
+article.podcast .episode_downloads {
+  background-color: $baseColor;
+}
+
 // Player
 article.podcast .podlovewebplayer_wrapper {
 	background-color: $baseColor;
@@ -148,9 +153,15 @@ article.podcast .podlove-contributors-table {
 	margin: 0;
 	padding: 0;
 	
+  th {
+  	color: $textColor;
+  	padding-left: .5em;
+	}
+	
 	td {
 		padding: 0;
 		height: 50px;
+  	border: 0;
 		
 		&.flattr_cell {
 			width: 125px;
