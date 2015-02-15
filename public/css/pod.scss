@@ -13,7 +13,7 @@ article.podcast .podlovewebplayer_wrapper {
     background: lighten($baseColor, 10%) !important;
   }
 
-	&, a, .mejs-container .mejs-controls .mejs-time span {
+	&, a, .mejs-container .mejs-controls .mejs-time span, .mejs-button.mejs-volume-button button {
 		color: $textColor;
 	}
 	
