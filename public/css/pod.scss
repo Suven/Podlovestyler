@@ -1,0 +1,204 @@
+$baseColor: #333333;
+$textColor: #fff;
+$iconColor: #fff;
+$iconColorHover: #FA6900;
+$borderRadius: 5px;
+
+// Player
+article.podcast .podlovewebplayer_wrapper {
+	background-color: $baseColor;
+	border-radius: $borderRadius $borderRadius 0 0;
+
+  .mejs-container .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
+    background: lighten($baseColor, 10%) !important;
+  }
+
+	&, a, .mejs-container .mejs-controls .mejs-time span {
+		color: $textColor;
+	}
+	
+	.podlovewebplayer_meta, .podlovewebplayer_tableend, #mep_0, .podlovewebplayer_timecontrol, .mejs-mediaelement, .mejs-controls, .podlovewebplayer_chapterbox, .podlovewebplayer_sharebuttons, .mejs-container  {
+		background: none;
+	}
+	
+	.podlovewebplayer_chapters, .podlovewebplayer_timecontrol, .podlovewebplayer_sharebuttons  {
+		border-spacing: 0;
+		border-collapse: separate;
+		border: 0;
+		margin: 0;
+	}
+	
+	.podlovewebplayer_chapterbox {
+		border: none;
+		color: $textColor !important;
+
+		.chaptertr {
+			background: lighten($baseColor, 10%);
+			color: $textColor !important;
+			border-spacing: 0;
+			border-collapse: separate;
+			border: 0;
+			margin: 0;
+			
+			td {
+				border: 0;
+				text-shadow: none;
+			}
+			&.active, &:hover, &.loaded {
+				background: darken($baseColor, 5%);
+				color: $textColor;
+			}
+		}
+		.chaptertr:nth-child(odd) {
+			background: lighten($baseColor, 8%);
+			
+			&.active, &:hover, &.loaded {
+				background: darken($baseColor, 5%);
+				color: $textColor;
+			}
+		}
+	}
+
+	.podlovewebplayer_tableend {
+		box-shadow: none;
+	}
+	
+	.mejs-horizontal-volume-total, .mejs-time-total {
+		background: darken($baseColor, 20%);
+	}
+	
+	.mejs-time-loaded {
+		background: darken(#eaeced, 25%);
+	}
+	
+	.mejs-horizontal-volume-current, .mejs-time-current {
+		background: #eaeced;
+	}
+	
+	.mejs-time-float {
+		background: darken($baseColor, 20%);
+		border-color: darken($baseColor, 20%);
+		color: $textColor !important;
+	}
+	
+	.mejs-time-float-corner {
+		border-top-color: darken($baseColor, 20%);
+	}
+	
+	.podlovewebplayer_meta {
+		min-height: 0;
+		
+		.bigplay {
+			border: none !important;
+			font-size: 16px;
+			height: auto;
+			width: auto;
+			padding: 5px 0 0 16px;
+      color: $iconColor;
+			
+			&:hover {
+				border: none !important;
+				color: $iconColorHover;
+			}
+		}
+	}
+	
+	.podlovewebplayer_meta .bigplay:focus, .podlovewebplayer_meta .bigplay, .podlovewebplayer_meta .bigplay:active, .podlovewebplayer_controlbox .infobuttons, .podlovewebplayer_meta .togglers .infobuttons, .podlovewebplayer_controlbox .infobuttons {
+  	text-shadow: none;
+  	color: $iconColor;
+  	
+  	&:hover {
+		  color: $iconColorHover;	
+		  text-shadow: none;
+  	}
+	}
+	
+	.podlovewebplayer_meta .togglers .infobuttons:hover, .podlovewebplayer_meta .togglers .infobuttons a:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons a:hover {
+		border-color: $baseColor !important;
+		text-shadow: none;
+	}
+	
+	.episodetitle {
+  	display: none;
+	}
+	
+	.coverart, .podlovewebplayer_meta .togglers a.infowindow, .podlovewebplayer_meta .togglers a.infowindow:before {
+		content: normal;
+		display: none;
+	}
+	
+}
+
+// Contrib 
+
+article.podcast .podlove-contributors-table {
+	background: none;
+	color: $textColor;;
+	width: 100%;
+	
+	border-spacing: 0;
+	border-collapse: separate;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	
+	td {
+		padding: 0;
+		height: 50px;
+		
+		&.flattr_cell {
+			width: 125px;
+		}
+		
+		&.avatar_cell {
+			position: relative;
+			
+			.avatar {
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+		
+		&.social_cell a, &.donation_cell a, &.flattr_cell iframe {
+			position: relative;
+			top: 3px;
+		}
+		
+		&.flattr_cell iframe {
+			left: 7px;
+		}
+		
+		&.title_cell {
+			font-size: 14px;
+			letter-spacing: 1px;
+		}
+
+	}
+	
+	tr {
+		background: lighten($baseColor, 10%);
+		padding: 0;
+		margin: 0;
+		
+		.flattr_cell {
+			background: lighten($baseColor, 14%);
+		}
+	}
+	tr:nth-child(odd) {
+		background: lighten($baseColor, 8%);
+		
+		.flattr_cell {
+			background: lighten($baseColor, 12%);
+		}
+	}
+	
+	.avatar_cell {width: 60px;}
+	.title_cell {line-height: 1em;}
+  .social_cell a, .podlove-contributors-table .donation_cell a {margin-right: 4px;background: none;text-decoration: none;}
+  a {border: 0;}
+	a img {display: inline;}
+	.flattr_cell iframe {margin-bottom: 0px;}
+	td {vertical-align: middle;}
+
+}

@@ -1,0 +1,97 @@
+extends layout
+
+block content
+	h1= title
+	p This tool helps you customizing your Podlove Player v1.
+	
+	.demo
+	
+		h2 Preview
+		
+		include playerV1.jade
+							
+	h2 Configs
+	
+	form#playerConfigs
+
+		.form-group
+			label(for="bodyBg") Your Sites BG
+			input.color#bodyBg(value="#fff")
+
+		.form-group
+			label(for="baseColor") Base-Color
+			input.color#baseColor(value="#333333")
+			
+		.form-group
+			label(for="textColor") Text-Color
+			input.color#textColor(value="#fff")
+			
+		.form-group
+			label(for="iconColor") Icon-Color
+			input.color#iconColor(value="#fff")
+			
+		.form-group
+			label(for="iconColorHover") Hovered Icon-Color
+			input.color#iconColorHover(value="#FA6900")
+			
+		.form-group
+			label(for="borderRadius") Border-Radius
+			input.pixel#borderRadius(value="5px")
+			
+		.submit
+			span#tryEmOut.button Try it!
+	
+	h2 Output
+	
+	p You can either save the contents of below textarea to a .css-file and include it within your template, or you can use the second textarea if you would just like to place it somewhere in your html (for example your header.tpl.php).
+	
+	textarea#generated
+		include ../public/css/pod.css
+	
+	textarea#generatedWithWrapper
+		style(rel='stylesheet')
+			include ../public/css/pod.css
+	
+	h2 Some additional notes...
+	
+	p Currently the number of configs is kind of limited. More options may come in future.
+	p There currently is a german discussion on Sendegate as well as a github-repo if you wish to leave feedback.
+							
+	script.
+		(function() {
+			var s = document.createElement('script'), t = document.getElementsByTagName('script')[0];
+			s.type = 'text/javascript';
+			s.async = true;
+			s.src = 'https://api.flattr.com/js/0.6/load.js?mode=auto';
+			t.parentNode.insertBefore(s, t);
+		})();
+		
+		$(function () {
+			$('input.color').minicolors();
+			
+			$('#tryEmOut').click(function() {
+				
+				var data = {
+					baseColor: $('#baseColor').val(),
+					textColor: $('#textColor').val(),
+					iconColor: $('#iconColor').val(),
+					iconColorHover: $('#iconColorHover').val(),
+					borderRadius: $('#borderRadius').val()
+				};
+				
+				$.post("/c", data, function(r) {
+					if (!r.css) {
+						alert("Something went wrong. Please check your inputs");
+					} else {
+						$("#generated").val(r.css);
+						$("#generatedWithWrapper").val('<style rel="stylesheet">' + r.css + '</style>');
+						$("#podstyle").html(r.css);
+						$("body").css("background", $('#bodyBg').val());
+					}			
+				});
+				
+			});
+		});
+
+	style#podstyle
+		include ../public/css/pod.css
