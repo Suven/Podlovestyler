@@ -123,6 +123,11 @@ article.podcast .podlovewebplayer_wrapper {
   	display: none;
 	}
 	
+	.subtitle {
+  	font-size: 0;
+  	text-indent: 100%;
+	}
+	
 	.coverart, .podlovewebplayer_meta .togglers a.infowindow, .podlovewebplayer_meta .togglers a.infowindow:before {
 		content: normal;
 		display: none;
