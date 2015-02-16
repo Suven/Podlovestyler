@@ -1,4 +1,7 @@
-require('newrelic');
+// Inlcude new relic when configured
+if (process.env.NEW_RELIC_LICENSE_KEY) {
+  require('newrelic');
+}
 
 var express = require('express');
 var path = require('path');
