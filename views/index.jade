@@ -1,12 +1,10 @@
 extends layout
 
 block content
-	h1= title
+	h1#main= title
 	p This tool helps you customizing your Podlove Player v1.
 	
 	.demo
-	
-		h2 Preview
 		
 		.demoBg
 		include playerV1.jade
@@ -17,11 +15,11 @@ block content
 
 		.form-group
 			label(for="bodyBg") Your Sites BG
-			input.color#bodyBg(value="#eee", data-val="color")
+			input.color#bodyBg(value="#f2f4f7", data-val="color")
 
 		.form-group
 			label(for="baseColor") Base-Color
-			input.color#baseColor(value="#333333", data-val="color")
+			input.color#baseColor(value="#79858e", data-val="color")
 			
 		.form-group
 			label(for="textColor") Texts
@@ -33,11 +31,11 @@ block content
 			
 		.form-group
 			label(for="iconColorHover") Hovered Icons
-			input.color#iconColorHover(value="#FA6900", data-val="color")
+			input.color#iconColorHover(value="#26292b", data-val="color")
 			
 		.form-group
 			label(for="progressbarColor") Progress/Volume
-			input.color#progressbarColor(value="#ddd", data-val="color")
+			input.color#progressbarColor(value="#f2f4f7", data-val="color")
 			
 		.form-group
 			label(for="borderRadius") Border-Radius
@@ -68,5 +66,5 @@ block content
 	
 	h2 Some additional notes...
 	
-	p Currently the number of configs is kind of limited. More options may come in future.
-	p For feedback, join the german discussion on #[a(href="https://sendegate.de/t/webtool-zum-anpassen-des-podlove-players/1044") Sendegate] or write an issue in my #[a(href="https://github.com/Suven/Podlovestyler") github-repo].
+	p Currently the number of configs is kind of limited. More options may come in future. For feedback, join the german discussion on #[a(href="https://sendegate.de/t/webtool-zum-anpassen-des-podlove-players/1044") Sendegate] or write an issue in my #[a(href="https://github.com/Suven/Podlovestyler") github-repo].
+	p If you are looking for a german podcast about webdevelopment, have a look at #[a(href="http://webgeplapper.de") Webgeplapper.de].
