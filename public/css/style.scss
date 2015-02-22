@@ -48,6 +48,7 @@ a {
     padding: 3px 5px;
     height: 20px;
     border: solid 1px #ddd;
+    min-width: 100px;
     
     &.error {
       border-color: #ae0000;
