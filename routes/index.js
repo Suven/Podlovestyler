@@ -14,19 +14,25 @@ router.post('/c', function(req, res) {
 
   for (var k in req.body) {
     // Only use those keys, who are actually supported
-    if (_.contains(["baseColor", "textColor", "iconColor", "iconColorHover", "borderRadius", "progressbarColor"], k)) {
+    if (_.contains(["baseColor", "textColor", "iconColor", "iconColorHover", "borderRadius", "progressbarColor", "showContribs", "compactHeader"], k)) {
       reg = new RegExp("^\\$" + k + ":.+?;$", "m");
       rep = "$" + k + ": " + req.body[k] + ";";
       scss = scss.replace(reg, rep);
     }
   }
   
-  var r = sass.renderSync({
+  sass.render({
     data: scss,
-    outputStyle: 'compressed'
+    outputStyle: 'compressed',
+    includePaths: [ './public/css/' ],
+    success: function (newScss) {
+      res.send(newScss);
+    },
+    error: function(error) {
+  		res.sendStatus(500);
+  	}
   });
   
-  res.send(r);
 });
 
 module.exports = router;

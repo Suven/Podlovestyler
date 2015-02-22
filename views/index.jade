@@ -42,6 +42,18 @@ block content
 		.form-group
 			label(for="borderRadius") Border-Radius
 			input.pixel#borderRadius(value="5px", data-val="size")
+			
+		.form-group
+			label(for="compact") Compact Player
+			select#compact(data-val="bool")
+				option(value="true", selected) Yup
+				option(value="false") Nope
+
+		.form-group
+			label(for="showContribs") Contributors
+			select#showContribs(data-val="bool")
+				option(value="true", selected) Visible
+				option(value="false") Hidden
 	
 	h2 Output
 	

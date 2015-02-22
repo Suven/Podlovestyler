@@ -21,6 +21,9 @@ jQuery(function ($) {
       case 'size':
         validates = /^(?:-)?\d+(?:\.\d+)?(?:(?:px)?|(?:em)|(?:%))$/.test(val);
         break;
+      case 'bool':
+        validates = (val == "true" || val == "false");
+        break;
       default:
         validates = false;
     }
@@ -40,7 +43,9 @@ jQuery(function ($) {
 			iconColor: $('#iconColor').val(),
 			iconColorHover: $('#iconColorHover').val(),
 			borderRadius: $('#borderRadius').val(),
-			progressbarColor: $('#progressbarColor').val()
+			progressbarColor: $('#progressbarColor').val(),
+			showContribs: $('#showContribs').val(),
+			compactHeader: $('#compact').val()
 		};
 				
 		$.post("/c", data, function(r) {
@@ -55,7 +60,7 @@ jQuery(function ($) {
 		});
   }
   
-  $('input').change(function() {
+  $('input, select').change(function() {
     
     if (validateVal($(this), $(this).val(), $(this).data('val'))) {
       window.clearTimeout(autoTryTimeout);

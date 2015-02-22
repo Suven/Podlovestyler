@@ -38,13 +38,13 @@ a {
   margin-bottom: 1.5em;
   margin-right: 2em;
   
-  label, input {
+  label, input, select {
     display: block;
     margin: 0;
     padding: 0;
   }
   
-  input {
+  input, select {
     padding: 3px 5px;
     height: 20px;
     border: solid 1px #ddd;
@@ -55,6 +55,11 @@ a {
       background-color: #ae0000;
       color: #fff;
     }
+  }
+  
+  select {
+    min-width: 142px;
+    height: 28px;
   }
   
   label {

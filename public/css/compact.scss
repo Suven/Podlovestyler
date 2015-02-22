@@ -1,0 +1,29 @@
+// Player
+article.podcast .podlovewebplayer_wrapper {
+ 
+	.podlovewebplayer_meta {
+		min-height: 0;
+		
+		.bigplay {
+			font-size: 16px;
+			height: auto;
+			width: auto;
+			padding: 5px 0 0 16px;
+		}
+	}
+	
+	.episodetitle {
+  	display: none;
+	}
+	
+	.subtitle {
+  	font-size: 0;
+  	text-indent: 100%;
+	}
+	
+	.coverart, .podlovewebplayer_meta .togglers a.infowindow, .podlovewebplayer_meta .togglers a.infowindow:before {
+		content: normal;
+		display: none;
+	}
+  
+}
