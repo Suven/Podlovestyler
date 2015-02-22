@@ -17,34 +17,31 @@ block content
 
 		.form-group
 			label(for="bodyBg") Your Sites BG
-			input.color#bodyBg(value="#eee")
+			input.color#bodyBg(value="#eee", data-val="color")
 
 		.form-group
 			label(for="baseColor") Base-Color
-			input.color#baseColor(value="#333333")
+			input.color#baseColor(value="#333333", data-val="color")
 			
 		.form-group
 			label(for="textColor") Texts
-			input.color#textColor(value="#fff")
+			input.color#textColor(value="#fff", data-val="color")
 			
 		.form-group
 			label(for="iconColor") Icons
-			input.color#iconColor(value="#fff")
+			input.color#iconColor(value="#fff", data-val="color")
 			
 		.form-group
 			label(for="iconColorHover") Hovered Icons
-			input.color#iconColorHover(value="#FA6900")
+			input.color#iconColorHover(value="#FA6900", data-val="color")
 			
 		.form-group
 			label(for="progressbarColor") Progress/Volume
-			input.color#progressbarColor(value="#ddd")
+			input.color#progressbarColor(value="#ddd", data-val="color")
 			
 		.form-group
 			label(for="borderRadius") Border-Radius
-			input.pixel#borderRadius(value="5px")
-			
-		.submit
-			span#tryEmOut.button Try it!
+			input.pixel#borderRadius(value="5px", data-val="size")
 	
 	h2 Output
 	

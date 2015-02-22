@@ -47,6 +47,13 @@ a {
   input {
     padding: 3px 5px;
     height: 20px;
+    border: solid 1px #ddd;
+    
+    &.error {
+      border-color: #ae0000;
+      background-color: #ae0000;
+      color: #fff;
+    }
   }
   
   label {
@@ -58,25 +65,6 @@ a {
     }
   }
   
-}
-
-.submit {
-  display: block;
-  text-align: right;
-  margin-bottom: 2em;
-}
-
-.button {
-  padding: 10px 15px;
-  background-color: #333;
-  border: 1px solid #111;
-  border-radius: 3px;
-  cursor: pointer;
-  color: #fff;
-  
-  &:hover {
-    background-color: #111;
-  }
 }
 
 .pace {
