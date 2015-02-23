@@ -48,6 +48,7 @@ h2 {
   padding: 5px;
   background-color: lighten(#323539, 10%);
   color: #f2f4f7;
+  border-radius: 0;
 }
 
 .demo {
@@ -93,6 +94,8 @@ h2 {
     border-color: #f2f4f7;
     background-color: #f2f4f7;
     border-radius: 0;
+    box-shadow: none;
+    -webkit-appearance: none;
     
     &:focus {
       outline: none;
@@ -108,7 +111,6 @@ h2 {
   select {
     min-width: 142px;
     height: 28px;
-    -webkit-appearance: none;
   }
   
   label {
