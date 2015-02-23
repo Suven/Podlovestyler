@@ -6,11 +6,7 @@ $borderRadius: 5px;
 $progressbarColor: #f2f4f7;
 $showContribs: true;
 $compactHeader: true;
-
-// Downloads
-article.podcast .episode_downloads {
-  background-color: $baseColor;
-}
+$downloadButtons: true;
 
 // Player
 article.podcast .podlovewebplayer_wrapper {
@@ -135,4 +131,9 @@ article.podcast .podlovewebplayer_wrapper {
 // Compact Header
 @if $compactHeader {
   @import "compact";
+}
+
+// Download Buttons
+@if $downloadButtons {
+  @import "download";
 }

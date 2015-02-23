@@ -45,8 +45,15 @@ jQuery(function ($) {
 			borderRadius: $('#borderRadius').val(),
 			progressbarColor: $('#progressbarColor').val(),
 			showContribs: $('#showContribs').val(),
-			compactHeader: $('#compact').val()
+			compactHeader: $('#compact').val(),
+			downloadButtons: $('#downloadButtons').val()
 		};
+		
+		if (data.downloadButtons == "true") {
+  		$('form.downloads').css('display', 'block');
+		} else {
+  		$('form.downloads').css('display', 'none');
+		}
 				
 		$.post("/c", data, function(r) {
 		  if (!r.css) {

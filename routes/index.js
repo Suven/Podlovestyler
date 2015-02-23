@@ -14,7 +14,7 @@ router.post('/c', function(req, res) {
 
   for (var k in req.body) {
     // Only use those keys, who are actually supported
-    if (_.contains(["baseColor", "textColor", "iconColor", "iconColorHover", "borderRadius", "progressbarColor", "showContribs", "compactHeader"], k)) {
+    if (_.contains(["baseColor", "textColor", "iconColor", "iconColorHover", "borderRadius", "progressbarColor", "showContribs", "compactHeader", "downloadButtons"], k)) {
       reg = new RegExp("^\\$" + k + ":.+?;$", "m");
       rep = "$" + k + ": " + req.body[k] + ";";
       scss = scss.replace(reg, rep);
