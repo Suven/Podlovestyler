@@ -15,11 +15,19 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #3d80af;
+  text-decoration: none;
+  font-family: "adelle",serif;
 }
 
-h1#main {
+h1#main, h2 {
   font-family: "adelle",serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+p {
+  font-family: adelle-sans, sans-serif;
   font-style: normal;
   font-weight: 400;
 }
@@ -29,8 +37,17 @@ h2 {
 }
 
 #generated, #generatedWithWrapper {
-  width: 100%;
+  width: 45%;
   height: 80px;
+  display: inline-block;
+  margin-right: 5px;
+  
+  font-family: monospace;
+  font-size: 10px;
+  border: none;
+  padding: 5px;
+  background-color: lighten(#323539, 10%);
+  color: #f2f4f7;
 }
 
 .demo {
@@ -72,17 +89,26 @@ h2 {
     height: 20px;
     border: solid 1px #ddd;
     min-width: 100px;
+      
+    border-color: #f2f4f7;
+    background-color: #f2f4f7;
+    border-radius: 0;
     
+    &:focus {
+      outline: none;
+    }
+  
     &.error {
-      border-color: #ae0000;
-      background-color: #ae0000;
-      color: #fff;
+      border-color: #b03e3e;
+      background-color: #b03e3e;
+      color: #f2f4f7;
     }
   }
   
   select {
     min-width: 142px;
     height: 28px;
+    -webkit-appearance: none;
   }
   
   label {
@@ -124,7 +150,7 @@ h2 {
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #f2f4f7, 0 0 5px #f2f4f7;
+  box-shadow: 0 0 10px #ffffff, 0 0 5px #ffffff;
   opacity: 1.0;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -moz-transform: rotate(3deg) translate(0px, -4px);
