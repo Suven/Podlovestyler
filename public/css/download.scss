@@ -5,6 +5,11 @@ article.podcast .podlovewebplayer_wrapper {
 
 // Downloads
 article.podcast .episode_downloads {
+  
+  @if $showContribs == false {
+    border-radius: 0 0 $borderRadius $borderRadius;
+  }
+  
   background-color: $baseColor;
   text-align: center;
   padding-bottom: 8px;
