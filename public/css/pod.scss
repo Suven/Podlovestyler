@@ -9,7 +9,8 @@ $compactHeader: true;
 $downloadButtons: false;
 
 // Player
-article.podcast .podlovewebplayer_wrapper {
+article.podcast .podlovewebplayer_wrapper,
+div.episode-overview .podlovewebplayer_wrapper {
 	background-color: $baseColor;
 	border-radius: $borderRadius;
 
@@ -132,7 +133,8 @@ article.podcast .podlovewebplayer_wrapper {
 @if $showContribs {
 	@import "contrib";
 } @else {
-	article.podcast .podlove-contributors-table {
+	article.podcast .podlove-contributors-table,
+	.episode-overview .podlove-contributors-table {
 		display: none;
 	}
 }

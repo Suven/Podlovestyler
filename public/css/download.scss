@@ -1,10 +1,12 @@
 // Player
-article.podcast .podlovewebplayer_wrapper {
+article.podcast .podlovewebplayer_wrapper,
+.episode-overview .podlovewebplayer_wrapper {
 	border-radius: $borderRadius $borderRadius 0 0;
 }
 
 // Downloads
-article.podcast .episode_downloads {
+article.podcast .episode_downloads,
+.episode-overview .episode_downloads {
 	
 	@if $showContribs == false {
 		border-radius: 0 0 $borderRadius $borderRadius;

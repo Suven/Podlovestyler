@@ -1,10 +1,12 @@
 // Player
-article.podcast .podlovewebplayer_wrapper {
+article.podcast .podlovewebplayer_wrapper,
+.episode-overview .podlovewebplayer_wrapper {
 	border-radius: $borderRadius $borderRadius 0 0;
 }
 
 // Contrib 
-article.podcast .podlove-contributors-table {
+article.podcast .podlove-contributors-table,
+.episode-overview .podlove-contributors-table {
 	background: $baseColor;
 	color: $textColor;;
 	width: 100%;
