@@ -117,6 +117,15 @@ article.podcast .podlovewebplayer_wrapper {
 		text-shadow: none;
 	}
 	
+	// Bootstrap-Fixes
+	table {
+  	border: none !important;
+  	
+  	td {
+    	border: none !important;
+  	}
+	}
+	
 }
 
 // Contrib 

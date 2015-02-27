@@ -11,7 +11,7 @@ article.podcast .podlove-contributors-table {
 	
 	border-spacing: 0;
 	border-collapse: collapse;
-	border: 0;
+	border: none !important;
 	margin: 0;
 	padding: 0;
 	
@@ -21,9 +21,10 @@ article.podcast .podlove-contributors-table {
 	}
 	
 	td {
-		padding: 0;
+		padding: 0 !important;
 		height: 50px;
-  	border: 0;
+  	border: none !important;
+  	vertical-align: middle !important;
 		
 		&.flattr_cell {
 			width: 125px;
