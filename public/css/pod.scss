@@ -13,19 +13,19 @@ article.podcast .podlovewebplayer_wrapper {
 	background-color: $baseColor;
 	border-radius: $borderRadius;
 
-  .mejs-container .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
-    background: lighten($baseColor, 10%) !important;
-  }
+	.mejs-container .mejs-inner .mejs-controls .mejs-time-rail .mejs-time-total .mejs-time-loaded {
+		background: lighten($baseColor, 10%) !important;
+	}
 
 	&, a, .mejs-container .mejs-controls .mejs-time span, .mejs-button.mejs-volume-button button {
 		color: $textColor;
 	}
 	
-	.podlovewebplayer_meta, .podlovewebplayer_tableend, #mep_0, .podlovewebplayer_timecontrol, .mejs-mediaelement, .mejs-controls, .podlovewebplayer_chapterbox, .podlovewebplayer_sharebuttons, .mejs-container  {
+	.podlovewebplayer_meta, .podlovewebplayer_tableend, #mep_0, .podlovewebplayer_timecontrol, .mejs-mediaelement, .mejs-controls, .podlovewebplayer_chapterbox, .podlovewebplayer_sharebuttons, .mejs-container	 {
 		background: none;
 	}
 	
-	.podlovewebplayer_chapters, .podlovewebplayer_timecontrol, .podlovewebplayer_sharebuttons  {
+	.podlovewebplayer_chapters, .podlovewebplayer_timecontrol, .podlovewebplayer_sharebuttons	{
 		border-spacing: 0;
 		border-collapse: separate;
 		border: 0;
@@ -93,7 +93,7 @@ article.podcast .podlovewebplayer_wrapper {
 		
 		.bigplay {
 			border: none !important;
-      color: $iconColor;
+			color: $iconColor;
 			
 			&:hover {
 				border: none !important;
@@ -103,13 +103,13 @@ article.podcast .podlovewebplayer_wrapper {
 	}
 	
 	.podlovewebplayer_meta .bigplay:focus, .podlovewebplayer_meta .bigplay, .podlovewebplayer_meta .bigplay:active, .podlovewebplayer_controlbox .infobuttons, .podlovewebplayer_meta .togglers .infobuttons, .podlovewebplayer_controlbox .infobuttons {
-  	text-shadow: none;
-  	color: $iconColor;
-  	
-  	&:hover {
-		  color: $iconColorHover;	
-		  text-shadow: none;
-  	}
+		text-shadow: none;
+		color: $iconColor;
+		
+		&:hover {
+			color: $iconColorHover;	
+			text-shadow: none;
+		}
 	}
 	
 	.podlovewebplayer_meta .togglers .infobuttons:hover, .podlovewebplayer_meta .togglers .infobuttons a:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons a:hover {
@@ -119,30 +119,30 @@ article.podcast .podlovewebplayer_wrapper {
 	
 	// Bootstrap-Fixes
 	table {
-  	border: none !important;
-  	
-  	td {
-    	border: none !important;
-  	}
+		border: none !important;
+		
+		td {
+			border: none !important;
+		}
 	}
 	
 }
 
 // Contrib 
 @if $showContribs {
-  @import "contrib";
+	@import "contrib";
 } @else {
-  article.podcast .podlove-contributors-table {
-    display: none;
-  }
+	article.podcast .podlove-contributors-table {
+		display: none;
+	}
 }
-  
+	
 // Compact Header
 @if $compactHeader {
-  @import "compact";
+	@import "compact";
 }
 
 // Download Buttons
 @if $downloadButtons {
-  @import "download";
+	@import "download";
 }

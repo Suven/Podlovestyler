@@ -15,16 +15,16 @@ article.podcast .podlove-contributors-table {
 	margin: 0;
 	padding: 0;
 	
-  th {
-  	color: $textColor;
-  	padding-left: .5em;
+	th {
+		color: $textColor;
+		padding-left: .5em;
 	}
 	
 	td {
 		padding: 0 !important;
 		height: 50px;
-  	border: none !important;
-  	vertical-align: middle !important;
+		border: none !important;
+		vertical-align: middle !important;
 		
 		&.flattr_cell {
 			width: 125px;
@@ -75,8 +75,8 @@ article.podcast .podlove-contributors-table {
 	
 	.avatar_cell {width: 60px;}
 	.title_cell {line-height: 1em;}
-  .social_cell a, .donation_cell a {margin-right: 4px;background: none;text-decoration: none;}
-  a {border: 0;}
+	.social_cell a, .donation_cell a {margin-right: 4px;background: none;text-decoration: none;}
+	a {border: 0;}
 	a img {display: inline;}
 	.flattr_cell iframe {margin-bottom: 0px;}
 	td {vertical-align: middle;}

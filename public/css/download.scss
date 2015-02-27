@@ -5,40 +5,40 @@ article.podcast .podlovewebplayer_wrapper {
 
 // Downloads
 article.podcast .episode_downloads {
-  
-  @if $showContribs == false {
-    border-radius: 0 0 $borderRadius $borderRadius;
-  }
-  
-  background-color: $baseColor;
-  text-align: center;
-  padding-bottom: 8px;
-  
-  select, button {
-    background: darken($baseColor, 10%);
-    border: 1px solid darken($baseColor, 20%);
-    color: $textColor;
-    font-size: 1em;
-    
-    padding: 2px 25px 2px 4px;
-    
-    cursor: pointer;
-    
-    border-radius: 0;
-    box-shadow: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    
-    &:hover {
-      background-color: darken($baseColor, 20%);
-      border: 1px solid darken($baseColor, 20%);
-    }
-  }
-  
-  select {
-    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIXERYaZKy99gAAAGdJREFUOMvt00EKgCAQhWH3BdE1IsyrdqHArR1FOsPfxjZio6SLFr714xsGZpTq+WeAGdiBoaA7hu4klVbgAg4JDZgFPLDkJhsJjTBdunoS/YS9oVVYAnXAWYVF6BPd6pwMsPXHEnMDUZCscmOwpnwAAAAASUVORK5CYII=');
-    background-position: right center;
-    background-repeat: no-repeat;
-  }
+	
+	@if $showContribs == false {
+		border-radius: 0 0 $borderRadius $borderRadius;
+	}
+	
+	background-color: $baseColor;
+	text-align: center;
+	padding-bottom: 8px;
+	
+	select, button {
+		background: darken($baseColor, 10%);
+		border: 1px solid darken($baseColor, 20%);
+		color: $textColor;
+		font-size: 1em;
+		
+		padding: 2px 25px 2px 4px;
+		
+		cursor: pointer;
+		
+		border-radius: 0;
+		box-shadow: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		
+		&:hover {
+			background-color: darken($baseColor, 20%);
+			border: 1px solid darken($baseColor, 20%);
+		}
+	}
+	
+	select {
+		background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wIXERYaZKy99gAAAGdJREFUOMvt00EKgCAQhWH3BdE1IsyrdqHArR1FOsPfxjZio6SLFr714xsGZpTq+WeAGdiBoaA7hu4klVbgAg4JDZgFPLDkJhsJjTBdunoS/YS9oVVYAnXAWYVF6BPd6pwMsPXHEnMDUZCscmOwpnwAAAAASUVORK5CYII=');
+		background-position: right center;
+		background-repeat: no-repeat;
+	}
 }
