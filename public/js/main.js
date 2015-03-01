@@ -54,6 +54,12 @@ jQuery(function ($) {
 		} else {
   		$('form.downloads').css('display', 'none');
 		}
+		
+		if (data.showContribs == "true") {
+  		$('.podlove-contributors-table').show();
+		} else {
+  		$('.podlove-contributors-table').hide();
+		}
 				
 		$.post("/c", data, function(r) {
 		  if (!r.css) {

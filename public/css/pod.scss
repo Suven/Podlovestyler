@@ -133,11 +133,6 @@ div.episode-overview .podlovewebplayer_wrapper,
 // Contrib 
 @if $showContribs {
 	@import "contrib";
-} @else {
-	article.podcast .podlove-contributors-table,
-	.episode-overview .podlove-contributors-table {
-		display: none;
-	}
 }
 	
 // Compact Header
