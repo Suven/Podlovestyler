@@ -114,15 +114,6 @@ div.episode-overview .podlovewebplayer_wrapper,
 		}
 	}
 	
-	.podlovewebplayer_meta .togglers .infobuttons {
-		margin-top: 10px;
-	}
-	
-	.podlovewebplayer_meta .togglers .infowindow.infobuttons {
-		display: none;
-		height: 0;
-	}
-	
 	.podlovewebplayer_meta .togglers .infobuttons:hover, .podlovewebplayer_meta .togglers .infobuttons a:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons a:hover {
 		border-color: $baseColor !important;
 		text-shadow: none;
