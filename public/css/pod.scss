@@ -10,7 +10,8 @@ $downloadButtons: false;
 
 // Player
 article.podcast .podlovewebplayer_wrapper,
-div.episode-overview .podlovewebplayer_wrapper {
+div.episode-overview .podlovewebplayer_wrapper,
+.podcast_player .podlovewebplayer_wrapper{
 	background-color: $baseColor;
 	border-radius: $borderRadius;
 
@@ -111,6 +112,15 @@ div.episode-overview .podlovewebplayer_wrapper {
 			color: $iconColorHover;	
 			text-shadow: none;
 		}
+	}
+	
+	.podlovewebplayer_meta .togglers .infobuttons {
+		margin-top: 10px;
+	}
+	
+	.podlovewebplayer_meta .togglers .infowindow.infobuttons {
+		display: none;
+		height: 0;
 	}
 	
 	.podlovewebplayer_meta .togglers .infobuttons:hover, .podlovewebplayer_meta .togglers .infobuttons a:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons:hover, .podlovewebplayer_wrapper .podlovewebplayer_controlbox .infobuttons a:hover {
